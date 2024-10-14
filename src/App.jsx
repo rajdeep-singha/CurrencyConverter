@@ -42,10 +42,10 @@ const convert =()=>{
                             <InputBox
                                 label="From"
                                 amount={amount}
-                                CurrencyOptions={options}
+                                currencyOptions={options}
                                 onCurrencyChange={(currencies)=> setAmount(amount)}
                                 selectCurrency={from}
-                                OnAmountChange={(amount)=> setAmount(amount)}
+                                onAmountChange={(amount)=> setAmount(amount)}
                             />
                         </div>
                         <div className="relative w-full h-0.5">
@@ -61,7 +61,7 @@ const convert =()=>{
                             <InputBox
                              label="To"
                              amount={convertedAmount}
-                             CurrencyOptions={options}
+                             currencyOptions={options}
                              onCurrencyChange={(currencies)=> setTo(currencies)}
                              selectCurrency={from}
                              
@@ -78,3 +78,15 @@ const convert =()=>{
         </div>
     );}
     export default App
+
+
+
+
+
+
+
+
+
+
+
+
